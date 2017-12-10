@@ -1,5 +1,6 @@
+![screenshot](screenshot.png)
 
-This it the output when I run the attached code:
+The input bar looks fine, but this it the output when I run the attached code:
 
 ```
 2017-12-10 14:43:56.185084-0800 InputAccessoryViewTest[29643:1101268] [LayoutConstraints] Unable to simultaneously satisfy constraints.
