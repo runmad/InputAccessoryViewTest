@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		9048B4811FD863EF005C44AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9048B4801FD863EF005C44AB /* AppDelegate.swift */; };
-		9048B4831FD863EF005C44AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9048B4821FD863EF005C44AB /* ViewController.swift */; };
-		9048B4861FD863EF005C44AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9048B4841FD863EF005C44AB /* Main.storyboard */; };
 		9048B4881FD863EF005C44AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9048B4871FD863EF005C44AB /* Assets.xcassets */; };
 		9048B48B1FD863EF005C44AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9048B4891FD863EF005C44AB /* LaunchScreen.storyboard */; };
+		9048B4941FD86438005C44AB /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9048B4921FD86437005C44AB /* MessageViewController.swift */; };
+		9048B4951FD86438005C44AB /* MessageInputBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9048B4931FD86437005C44AB /* MessageInputBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9048B47D1FD863EF005C44AB /* InputAccessoryViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InputAccessoryViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9048B4801FD863EF005C44AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9048B4821FD863EF005C44AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9048B4851FD863EF005C44AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9048B4871FD863EF005C44AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9048B48A1FD863EF005C44AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9048B48C1FD863EF005C44AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9048B4921FD86437005C44AB /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		9048B4931FD86437005C44AB /* MessageInputBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageInputBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				9048B4801FD863EF005C44AB /* AppDelegate.swift */,
-				9048B4821FD863EF005C44AB /* ViewController.swift */,
-				9048B4841FD863EF005C44AB /* Main.storyboard */,
+				9048B4921FD86437005C44AB /* MessageViewController.swift */,
+				9048B4931FD86437005C44AB /* MessageInputBar.swift */,
 				9048B4871FD863EF005C44AB /* Assets.xcassets */,
 				9048B4891FD863EF005C44AB /* LaunchScreen.storyboard */,
 				9048B48C1FD863EF005C44AB /* Info.plist */,
@@ -125,7 +125,6 @@
 			files = (
 				9048B48B1FD863EF005C44AB /* LaunchScreen.storyboard in Resources */,
 				9048B4881FD863EF005C44AB /* Assets.xcassets in Resources */,
-				9048B4861FD863EF005C44AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +135,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9048B4831FD863EF005C44AB /* ViewController.swift in Sources */,
+				9048B4941FD86438005C44AB /* MessageViewController.swift in Sources */,
 				9048B4811FD863EF005C44AB /* AppDelegate.swift in Sources */,
+				9048B4951FD86438005C44AB /* MessageInputBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9048B4841FD863EF005C44AB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9048B4851FD863EF005C44AB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9048B4891FD863EF005C44AB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -211,7 +203,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
